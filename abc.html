@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        p{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .gg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-left: 80px;
+            padding-right: 80px;
+ 
+
+        }
+
+ 
+
+        .jj{
+             padding:10px;
+
+
+        }
+
+        .jj img {
+              object-fit: cover;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            width: 7.5vw;
+            height: 70vh;
+            transition: transform .2s;
+
+        }
+
+        .jj:hover img {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+            transform: scale(1.1);
+
+
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .gg{
+               flex-direction: column;
+               flex-wrap: wrap;
+               height: 300vh;
+            
+
+
+            
+            
+        
+  
+               
+            }
+            .jj img {            
+                width: 30vw;
+                transition: transform .2s;
+
+
+        }
+
+            @media only screen and (max-width: 480px) {
+
+                .gg{
+                   flex-direction: column;
+                   flex-wrap: wrap;
+                   height: 600vh;
+
+
+
+
+
+
+
+
+                }
+                .jj img {            
+                    width: 60vw;
+                    transition: transform .2s;
+
+
+            }
+        }}
+    </style>
+
+</head>
+<body>
+<p>la galleria</p>
+<hr>
+
+<div class="gg">
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+<div class="jj"><img src="images.jpg"></div>
+</div>
+
+
+</body>
+</html>
